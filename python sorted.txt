@@ -1,0 +1,10 @@
+python sorted is used for sorting an iterable.
+there are quite a few things to take note of when you are using sorted function in python:
+1)python sorted always returns a new list.
+2)there are two optional arguments that can be used with python sorted: key and reverse
+3)sorted can be used on any iterable while .sort() can only be used with a python list
+Also,when dealing with .sort() method , always remember that we cannot get back to the original list after using sort method.However, if we used the sorted function,
+we can still have the access to the original list since sorted always returns a nwe list.
+4).sort() does not return anything while sorted() does.
+Now , we have talked enough about all of these time to see a few examples to demonstrate these points and after that , we'll see how and where to use key and reverse 
+arguments while using sorted in python .
