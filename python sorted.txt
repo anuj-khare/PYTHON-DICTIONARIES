@@ -1,10 +1,18 @@
-python sorted is used for sorting an iterable.
-there are quite a few things to take note of when you are using sorted function in python:
-1)python sorted always returns a new list.
-2)there are two optional arguments that can be used with python sorted: key and reverse
-3)sorted can be used on any iterable while .sort() can only be used with a python list
-Also,when dealing with .sort() method , always remember that we cannot get back to the original list after using sort method.However, if we used the sorted function,
-we can still have the access to the original list since sorted always returns a nwe list.
-4).sort() does not return anything while sorted() does.
-Now , we have talked enough about all of these time to see a few examples to demonstrate these points and after that , we'll see how and where to use key and reverse 
-arguments while using sorted in python .
+Python sorted() function is used to sort an iterable.
+There are quite a few things to take note of when you are using sorted function in python:
+1)Python sorted() always returns a new list.
+2)There are two optional arguments that can be used with python sorted: key and reverse.
+3)sorted() can be used on any iterable while .sort() method can only be used with a python list.
+Also,when dealing with .sort() method , always remember that we cannot get back to the original list after using sort method.However, if we sorted() function was used,
+getting access to the original list would still be possible since sorted() returns a new sorted list.
+4).sort() method does not return anything while sorted() does.
+Now , we have talked enough about all of this.Time to see a few examples to demonstrate these points and after that , we'll see how and where to use key and reverse 
+arguments while using sorted() in python.
+
+mylist = [1,12,33,50]
+print(id(mylist))
+#sorted on mylist returns a sorted list.
+print(sorted(mylist))
+#the next print statement will return False as sorted doesnt manipulates the original list.
+print(sorted(mylist) is mylist)
+
